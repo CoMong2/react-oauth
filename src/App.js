@@ -1,23 +1,33 @@
-/** eslint-disable */
-import axios from 'axios';
-import { useState, useEffect } from 'react';
+/* eslint-disable */
+import React, { useState } from 'react';
+import google from './login/google.png';
+import GoogleAuthButton from './login/GoogleAuthButton';
+
 
 function App() {
-  const [message, setMessage] = useState('');
-  const [uri, setUri] = useState('');
+  const [result, setResult] = useState(null);
 
-  useEffect(() => {
-    axios.get(uri).then((response) => {
-      setMessage(response.data);
-    });
-  }, []);
+  const moveToAuth = async () => {
+    try {
+      window.location.href=process.env.REACT_APP_API_PATH + '/auth/google';
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <div className="App">
-      <button onClick={() => setUri('/auth/google')}>Google</button>
-      {/* <h1>{message}</h1> */}
+      <div>
+        <h1>Minions</h1>
+        <span onClick={() => {moveToAuth();}}>
+          <img src={ google } />
+        </span>
+      </div>
+      <div>
+        <GoogleAuthButton/>
+      </div>
     </div>
   );
 }
-
+  
 export default App;
