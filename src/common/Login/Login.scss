@@ -1,0 +1,26 @@
+.Login {
+    background-color: #AAD5E8;
+    text-align: center;
+
+    img {
+      &.login-title {
+        width: 50%;
+        margin: 5rem 0 4rem 0;
+      }
+  
+      &.login-banner {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .title {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 36px;
+      color: #54242C;
+    }
+  }
+  

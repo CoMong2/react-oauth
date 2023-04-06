@@ -1,0 +1,13 @@
+.Layout {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+  
+    .Page {
+      width: calc(100% - 265px);
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+  
