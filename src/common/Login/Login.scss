@@ -1,26 +1,54 @@
 .Login {
-    background-color: #AAD5E8;
-    text-align: center;
+  background-color: #AAD5E8;
+  text-align: center;
 
-    img {
-      &.login-title {
-        width: 50%;
-        margin: 5rem 0 4rem 0;
-      }
-  
-      &.login-banner {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 1rem;
-      }
+  img {
+    &.login-title {
+      width: 50%;
+      margin: 5rem 0 4rem 0;
     }
 
-    .title {
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 36px;
-      color: #54242C;
+    &.login-banner {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 1rem;
     }
   }
+  .title {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: #54242C;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .btn {
+    padding:13px 12px;
+    font-size:16px;
+    vertical-align: baseline;
+  }
+
+  .btn-google {
+    color: #000;
+    background-color: #ffffff;
+    border-color: #ccc;
+    background-image: url(//vendor.imweb.me/images/google_icon.png);
+    background-size: 20px;
+    background-position: 15px 50%;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    font-family: Sans-Serif !important;
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+}
+  
   

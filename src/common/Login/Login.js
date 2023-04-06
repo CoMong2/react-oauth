@@ -18,9 +18,10 @@ const Login = () => {
             
             <div>
                 <p className='title'>Zanmang Dev's To-do List</p>
-                <span onClick={() => { moveToAuth(); }}>
+                {/* <span onClick={() => { moveToAuth(); }}>
                     <img src={ GoogleLogin } />
-                </span>
+                </span> */}
+                <a onClick={() => { moveToAuth(); }} class="btn btn-google btn-block"> Google 로그인</a>
             </div>
         </div>
     )

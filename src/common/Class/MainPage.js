@@ -16,11 +16,16 @@ const MainPage = () => {
     }, []);
 
     return (
-        <Layout title='Zanmang Loopy'>
-            <div>
-                메인메인
+        <div>
+            <Layout title={name}>
+                
+            </Layout>
+            <div className='MainPage'>
+              <p>name: { name }</p>
+              <p>email: { email }</p>
+              <p>accessToken: { accessToken }</p>
             </div>
-        </Layout>
+        </div>
     )
 
     function getCookieValue() {

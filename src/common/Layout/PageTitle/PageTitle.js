@@ -1,6 +1,6 @@
 import './PageTitle.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFileLines} from '@fortawesome/free-solid-svg-icons';
+import { faFileLines } from '@fortawesome/free-solid-svg-icons';
 
 const PageTitle = ({ title }) => {
   return (
